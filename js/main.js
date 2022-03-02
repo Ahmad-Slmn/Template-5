@@ -106,7 +106,9 @@ $(function () {
     // Smoothly Scroll To Elment
     $("nav ul li a").click(function (e) {
 
-        e.preventDefault()
+        e.preventDefault();
+        
+        $("nav ul").toggleClass("show");
 
         document.querySelector($(this).data("section")).scrollIntoView({
 
