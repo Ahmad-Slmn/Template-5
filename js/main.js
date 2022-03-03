@@ -82,7 +82,7 @@ $(function () {
 
             $('.landing .selected').fadeOut(1, function () {
 
-                $(this).removeClass('selected').next('.landing .text').addClass('selected').fadeIn();
+                $(this).removeClass('selected').next('.landing .text').addClass('selected').fadeIn("slow");
 
                 checkClients();
 
@@ -92,7 +92,7 @@ $(function () {
 
             $('.landing .selected').fadeOut(1, function () {
 
-                $(this).removeClass('selected').prev('.landing .text').addClass('selected').fadeIn();
+                $(this).removeClass('selected').prev('.landing .text').addClass('selected').fadeIn("slow");
 
                 checkClients();
 
@@ -101,7 +101,6 @@ $(function () {
         }
 
     });
-
 
     // Smoothly Scroll To Elment
     $("nav ul li a").click(function (e) {

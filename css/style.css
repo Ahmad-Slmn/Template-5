@@ -309,7 +309,7 @@ header nav .form i {
 
 .landing .text p {
     font-size: 14px;
-    line-height: 2
+    line-height: 1.7
 }
 
 .landing .change-background {
@@ -883,7 +883,7 @@ header nav .form i {
 .our-skills .skills .prog-holder .prog p{
     position: absolute;
     top: 50%;
-    right: -16px;
+    right: -14px;
     transform: translate(-50%, -50%);
     font-weight: bold;
     color: var(--main-color)
@@ -1228,6 +1228,8 @@ header nav .form i {
 @media(max-width:450px){
    
     p, q{font-size: 10px !important}
+    
+    .our-skills .skills .prog-holder .prog p{right: -8px}
 }
 
 /* End Contact */
