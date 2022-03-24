@@ -298,7 +298,8 @@ header nav .form i {
     background-color: var(--transparent-color);
     color: #fff;
     text-align: center;
-    display: none
+    display: none;
+    border-radius: 20px
 }
 
 .selected {
@@ -1263,6 +1264,10 @@ header nav .form i {
     .pricing .plans .plan .head span::before {
         top: -10px
     }
+    
+    .landing .change-background{
+        top: 52%
+    }
 }
 
 @media(max-width:450px) {
@@ -1274,6 +1279,10 @@ header nav .form i {
 
     .our-skills .skills .prog-holder .prog p {
         right: -8px
+    }
+    
+    .landing .text p{
+        font-size: 5px !important
     }
 }
 
@@ -1309,8 +1318,13 @@ header nav .form i {
 
 .footer .social-icons i {
     padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px
 
+}
 
+.footer .social-icons i:hover{
+    background: var(--main-color)
 }
 
 .footer p:not(.copyright) {

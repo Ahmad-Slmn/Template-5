@@ -3,9 +3,25 @@ $(function () {
     // Show Or Hide Menue
     $(".fa-bars").click(function () {
 
+        if ($("nav ul").hasClass("show")) {
+
+            $(this).css("color", "#fff")
+        } else {
+            $(this).css("color", "#19c8fa")
+        }
+
         $("nav ul").toggleClass("show")
     })
 
+    // check shuffle-lis
+    $(".portfolio .shuffle li").each(function () {
+
+        $(this).click(function () {
+
+            $(this).addClass("active").siblings().removeClass("active")
+        })
+
+    })
 
     $(window).scroll(function () {
 
