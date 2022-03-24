@@ -42,7 +42,10 @@ body {
 
 }
 
-:focus::placeholder{transition: var(--trans); opacity: 0}
+:focus::placeholder {
+    transition: var(--trans);
+    opacity: 0
+}
 
 .fa-arrow-up {
     position: fixed;
@@ -69,8 +72,8 @@ body {
     .container {
         width: 750px;
     }
-    
-   
+
+
 }
 
 /* Medium */
@@ -78,7 +81,7 @@ body {
     .container {
         width: 970px
     }
-    
+
 }
 
 /* Large */
@@ -88,9 +91,11 @@ body {
     }
 }
 
-@media (min-width: 700px) and (max-width: 900px){
-    
-    .our-skills .testimonials .box{max-height: 250px !important}
+@media (min-width: 700px) and (max-width: 900px) {
+
+    .our-skills .testimonials .box {
+        max-height: 250px !important
+    }
 }
 
 :focus {
@@ -502,7 +507,9 @@ header nav .form i {
 .portfolio .shuffle li {
     padding: 10px;
     transition: 1s ease;
-    cursor: pointer
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0 5px
 }
 
 .portfolio .shuffle li.active,
@@ -779,27 +786,40 @@ header nav .form i {
 
 }
 
-.our-skills .testimonials .box{max-height: 245px; overflow: hidden}
-
-@media(min-width:991px){
-    
-    .our-skills .testimonials .box{max-height: 344px; overflow: hidden}
+.our-skills .testimonials .box {
+    max-height: 245px;
+    overflow: hidden
 }
 
-@media(min-width:992px){
-    
-    .our-skills .testimonials .box{max-height: 310px; overflow: hidden}
+@media(min-width:991px) {
+
+    .our-skills .testimonials .box {
+        max-height: 344px;
+        overflow: hidden
+    }
+}
+
+@media(min-width:992px) {
+
+    .our-skills .testimonials .box {
+        max-height: 310px;
+        overflow: hidden
+    }
 }
 
 
 
-.our-skills .testimonials .hold{display: none}
+.our-skills .testimonials .hold {
+    display: none
+}
 
 
-.our-skills .testimonials .hold.slected{display: block}
+.our-skills .testimonials .hold.slected {
+    display: block
+}
 
 .our-skills .testimonials .content img {
-   width: 100px;
+    width: 100px;
     border-radius: 50%;
     margin-right: 50px;
     border: 2px solid #afadad;
@@ -816,8 +836,10 @@ header nav .form i {
     .our-skills .testimonials .content img {
         margin: 0 auto 20px
     }
-    
-    .our-skills .testimonials .box{max-height: 510px}
+
+    .our-skills .testimonials .box {
+        max-height: 510px
+    }
 
 
 }
@@ -880,7 +902,7 @@ header nav .form i {
     transition: var(--trans)
 }
 
-.our-skills .skills .prog-holder .prog p{
+.our-skills .skills .prog-holder .prog p {
     position: absolute;
     top: 50%;
     right: -14px;
@@ -918,7 +940,7 @@ header nav .form i {
     display: none
 }
 
-.quote .container img{
+.quote .container img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -926,9 +948,14 @@ header nav .form i {
     padding: 1px
 }
 
-.quote .container.active{display: block}
+.quote .container.active {
+    display: block
+}
 
-.quote .container span{color: var(--main-color); font-weight: bold}
+.quote .container span {
+    color: var(--main-color);
+    font-weight: bold
+}
 
 .quote .container q {
     font-size: 18px;
@@ -1073,8 +1100,8 @@ header nav .form i {
     .subscribe .container {
         flex-direction: column
     }
-    
-    
+
+
 }
 
 
@@ -1221,15 +1248,33 @@ header nav .form i {
     .contact .content .info address {
         margin-bottom: 40px
     }
-    
-    p, q, h1, h2{font-size: 15px !important}
+
+    p,
+    q,
+    h1,
+    h2 {
+        font-size: 15px !important
+    }
+
+    .pricing .plans .plan .head span {
+        font-size: 30px
+    }
+
+    .pricing .plans .plan .head span::before {
+        top: -10px
+    }
 }
 
-@media(max-width:450px){
-   
-    p, q{font-size: 10px !important}
-    
-    .our-skills .skills .prog-holder .prog p{right: -8px}
+@media(max-width:450px) {
+
+    p,
+    q {
+        font-size: 10px !important
+    }
+
+    .our-skills .skills .prog-holder .prog p {
+        right: -8px
+    }
 }
 
 /* End Contact */

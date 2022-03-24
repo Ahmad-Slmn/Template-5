@@ -36,12 +36,10 @@ $(function () {
                 $(this).css("width", 0)
 
                 $(".prog > p").fadeOut()
-            });
+            })
         }
 
     })
-
-
 
     // Click To Go Up
     $(".fa-arrow-up").click(function () {
@@ -106,7 +104,7 @@ $(function () {
     $("nav ul li a").click(function (e) {
 
         e.preventDefault();
-        
+
         $("nav ul").toggleClass("show");
 
         document.querySelector($(this).data("section")).scrollIntoView({
@@ -139,7 +137,7 @@ $(function () {
 
         $(".testimonials .hold3").fadeIn("slow").addClass("slected").siblings().fadeOut("slow").removeClass("slected")
     })
-    
+
     // Our Auto Slider Code
     $(function autoSlider() {
 
@@ -172,9 +170,6 @@ $(function () {
         });
 
     }());
-
-
-
 })
 
 let section = document.querySelector(".stats")
@@ -182,8 +177,6 @@ let numbers = document.querySelectorAll(".box .number")
 let strted = false
 
 window.onscroll = function () {
-
-
     if (this.scrollY >= section.offsetTop) {
 
         if (!strted) {
@@ -192,10 +185,7 @@ window.onscroll = function () {
         }
 
         strted = true
-
-
     }
-
 }
 
 function startCounter(el) {
