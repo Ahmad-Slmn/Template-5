@@ -94,7 +94,7 @@ $(function () {
 
         if ($(this).hasClass('fa-angle-right')) {
 
-            $('.landing .selected').fadeOut(1, function () {
+            $('.landing .selected').fadeOut("slow", function () {
 
                 $(this).removeClass('selected').next('.landing .text').addClass('selected').fadeIn("slow");
 
@@ -104,7 +104,7 @@ $(function () {
 
         } else {
 
-            $('.landing .selected').fadeOut(1, function () {
+            $('.landing .selected').fadeOut("slow", function () {
 
                 $(this).removeClass('selected').prev('.landing .text').addClass('selected').fadeIn("slow");
 

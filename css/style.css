@@ -507,16 +507,17 @@ header nav .form i {
 
 .portfolio .shuffle li {
     padding: 10px;
-    transition: 1s ease;
+    transition: var(--trans);
     cursor: pointer;
     border-radius: 10px;
-    margin: 0 5px
+    margin: 0 3px
 }
 
 .portfolio .shuffle li.active,
 .portfolio .shuffle li:hover {
     background-color: var(--transparent-color);
-    color: white
+    color: white;
+    border-radius: 10px;
 }
 
 
